@@ -31,7 +31,7 @@ print("Confusion Matrix:\n", conf_matrix)
 
 @app.route('/api/predict', methods=['GET'])
 def predict():
-    data = request.get_json()
+    # data = request.get_json()
     p1 = request.args.get('p1', default=None, type=str)
     p2 = request.args.get('p2', default=None, type=str)
     p3 = request.args.get('p3', default=None, type=str)
