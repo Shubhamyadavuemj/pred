@@ -53,10 +53,11 @@ def predict():
     
     
     
-    number_str = str(prediction[0])
-    number_json = json.dumps(number_str)
+    # number_str = str(prediction[0])
+    # number_json = json.dumps(number_str)
     
-    return number_json
+    # return number_json
+    return str(prediction[0])
     
 
 @app.route('/api/health', methods=['GET'])
