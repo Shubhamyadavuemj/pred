@@ -65,7 +65,7 @@ def health_check():
     return jsonify({'status': 'API is running'}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
     
     
 #http://127.0.0.1:5000/api/predict/p1=58&p2=0&p3=0&p4=100&p5=248&p6=0&p7=0&p8=122&p9=0&p10=1&p11=1&p12=0&p13=2
