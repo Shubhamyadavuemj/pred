@@ -57,7 +57,7 @@ def predict():
     # number_json = json.dumps(number_str)
     
     # return number_json
-    return str(prediction[0])
+    return jsonify({'prediction': prediction.tolist()})
     
 
 @app.route('/api/health', methods=['GET'])
